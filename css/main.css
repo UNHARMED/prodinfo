@@ -97,21 +97,238 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /* Extra small devices (phones, 600px and down) */
+   @media only screen and (min-width: 0px) {
+
+body {
+    background-image: url("../img/wp2.jpg");
+    background-size: cover;
+  }
+/* === MENU === */
+
+.menu_top {
+  background-color: #121212;
+  border: solid 1px;
+}
+
+.menu_top p {
+  position: absolute; left: 20px; top: 15px;
+  margin: 0px;
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+}
 
 
+.menu_top a {
+  text-decoration: none;
+  color: #c9aa71;
+  font-weight: bold;
+}
+
+.menu_top a:hover {
+  color: #fff;
+}
+
+.menu_top ul{
+  margin-top: 0;
+  list-style-type: none;
+  height: 40px;
+  text-align: right;
+  margin-right: 50px;
+  vertical-align:bottom;
+  line-height: 54px;
+}
+
+.menu_top li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.li1:hover {
+  border-bottom: solid 3px #c9aa71;
+}
+.li2:hover {
+  border-bottom: solid 3px #c9aa71;
+}
+
+/* === index.html STYLESHEET === */
+
+.card {
+  height: 400px;
+  width: 300px;
+  background-color: #121212;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border: solid 1px #c9aa71;
+  border-radius: 10px;
+}
+
+.card img {
+  margin-left: 20px;
+}
+
+.card p {
+  text-align: center;
+  color: #fff;
+  line-height: 50px;
+}
+
+a.arrow {
+  font-size: 32px;
+  color:  #c9aa71!important;
+  text-decoration: none;
+}
+
+a.arrow:hover {
+  font-size: 50px;
+}
 
 
+/* === fich.html STYLESHEET === */
 
 
+.a {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.a .a1, .a2, .a3 {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
+.reverse_mobile {
+  display: flex;
+  flex-direction:column-reverse;
+}
+
+.a1 {
+  height: 300px;
+  width: 300px;
+  background-color: #121212;
+  text-align: center;
+  border-right: px solid #121212;
+  border-left: 5px solid #121212;
+}
+
+.a2 {
+  background-color: #fff;
+  height: 50px;
+  width: 300px;
+  border-top: 5px solid #c9aa71;
+  border-left: 5px solid #c9aa71;
+  border-radius: 5px 0px 0px 0px;
+  position: top;
+}
+
+.a3 {
+  background-color: #fff;
+  width: 300px;
+  border-bottom: 5px solid #c9aa71;
+  border-right: 5px solid #c9aa71;
+  border-radius: 0px 0px 5px 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.a2 p{
+  word-wrap: break-word;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+}
 
 
+.a3 p{
+  word-wrap: break-word;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: black;
+  font-family: sans-serif;
+}
+
+.top_page_right {
+  position: relative;
+  text-align: right;
+}
+
+.top_page {
+  display: inline;
+  text-decoration: none;
+  color: #c9aa71;
+  position: relative;
+  text-align: right;
+  font-size: 60px;
+  margin-right: 50px;
+  width: 50px;
+  text-align: right;
+}
+
+.top_page:hover {
+  position: relative;
+  -webkit-animation: mymove 0.5s ;
+    animation: mymove 0.5s ;
+}
+
+@keyframes mymove {
+  0%   {bottom: 0px;}
+  50%  {bottom: 3px;}
+  100% {bottom: 0px;}
+}
+
+/* FOOTER */
+
+.footer {
+  margin-top: 30px;
+  color: white;
+  background-color: #121212;
+  border: solid 1px #222222;
+}
+
+.footer p {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: right;
+}
 
 
+/* contact.html STYLESHEET */
 
 
+.contact_loc {
+  line-height: 20px;
+  margin-left: 20px;
+  margin-right: 40px;
+  color: white;
+  font-family: sans-serif;
+  border-bottom: dotted 1px white;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 
+.contact_border {
+  border-bottom: solid 3px #c9aa71;
+  display: inline-block;
+  margin-bottom: -1px;
+}
+
+.contact_contents {
+  color: white;
+  margin-left: 20px;
+}
+
+
+}
 
 /* ==========================================================================
    Helper classes
