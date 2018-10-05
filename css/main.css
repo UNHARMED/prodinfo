@@ -97,7 +97,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   /* Extra small devices (phones, 600px and down) */
+   /* Extra small devices */
    @media only screen and (min-width: 0px) {
 
 body {
@@ -189,7 +189,7 @@ a.arrow:hover {
 /* === fich.html STYLESHEET === */
 
 
-.a {
+.fich_card {
   width: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -197,7 +197,7 @@ a.arrow:hover {
   margin-top: 50px;
 }
 
-.a .a1, .a2, .a3 {
+.fich_card .fich_img, .fich_ref, .fich_detail {
   margin-left: auto;
   margin-right: auto;
 }
@@ -208,7 +208,7 @@ a.arrow:hover {
   flex-direction:column-reverse;
 }
 
-.a1 {
+.fich_img {
   height: 300px;
   width: 300px;
   background-color: #121212;
@@ -217,7 +217,7 @@ a.arrow:hover {
   border-left: 5px solid #121212;
 }
 
-.a2 {
+.fich_ref {
   background-color: #fff;
   height: 50px;
   width: 300px;
@@ -227,7 +227,7 @@ a.arrow:hover {
   position: top;
 }
 
-.a3 {
+.fich_detail {
   background-color: #fff;
   width: 300px;
   border-bottom: 5px solid #c9aa71;
@@ -237,7 +237,7 @@ a.arrow:hover {
   padding-bottom: 20px;
 }
 
-.a2 p{
+.fich_ref p{
   word-wrap: break-word;
   padding-left: 10px;
   padding-right: 10px;
@@ -247,13 +247,15 @@ a.arrow:hover {
 }
 
 
-.a3 p{
+.fich_detail p{
   word-wrap: break-word;
   padding-left: 10px;
   padding-right: 10px;
   color: black;
   font-family: sans-serif;
 }
+
+/* ARROW */
 
 .top_page_right {
   position: relative;
@@ -327,6 +329,29 @@ a.arrow:hover {
   margin-left: 20px;
 }
 
+}
+
+/* Normal devices */
+@media only screen and (min-width: 1000px) {
+
+
+.cards {
+  display: flex;
+}
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards {
+  text-align: center;
+}
+
+
+.footer {
+  margin-top: 75px;
+}
 
 }
 
